@@ -1,9 +1,11 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
+import Header from '../../components/commons/Header';
 
 const FeedPostsScreen = () => {
     return (
         <View style={styles.container}>
+            <Header/>
             <Text>FeedPostsScreen</Text>
         </View>
     );
@@ -11,10 +13,7 @@ const FeedPostsScreen = () => {
 
 const styles = StyleSheet.create({
     container: {
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
-        backgroundColor: '#2c3e50'
+
     }
 });
 

@@ -9,7 +9,8 @@ const HomeFlowStack = createNativeStackNavigator();
 
     return (
         <HomeFlowStack.Navigator screenOptions={{
-            headerShown:false
+            headerShown:false,
+            contentStyle: styles.content,
         }}>
             <HomeFlowStack.Screen name="FeedPostScreen" component={FeedPostsScreen} />
             <HomeFlowStack.Screen name="ProfileScreen" component={ProfileScreen} />
@@ -20,3 +21,10 @@ const HomeFlowStack = createNativeStackNavigator();
 
 
 export default HomeFlow;
+
+
+const styles = StyleSheet.create({
+    content: {
+    //  backgroundColor: 'red', // Arka plan rengini burada belirtiyoruz
+    },
+  });

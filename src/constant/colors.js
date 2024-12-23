@@ -1,7 +1,7 @@
 export const colors ={
     BLUE:"#3BA1FF",
     BLACK:"#000000",
-    WHİTE:"#FFFFFF",
+    WHITE:"#FFFFFF",
     GRAY:"#EFEFEF",
     RED:"#FE0135",
     GREEN:"#2ECC71",
