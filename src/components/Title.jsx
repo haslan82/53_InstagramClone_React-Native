@@ -1,10 +1,23 @@
-import { StyleSheet, Text, View } from 'react-native'
+import { StyleSheet, Text } from 'react-native'
 import React from 'react'
+import { colors } from '../constant/colors'
 
-const Title = ({theme="default"}) => {
+
+
+export const titleTypes={
+    TEXT_14_400:"TEXT_14_400",
+    TEXT_14_700:"TEXT_14_700",
+    TEXT_16_700:"TEXT_16_700",
+    TEXT_12_400_18:"TEXT_12_400_18",
+    TEXT_22_700_40:"TEXT_22_700_40"
+}
+
+
+
+const Title = ({theme="default",text}) => {
   return (
     
-      <Text style={styles[theme]}>Title</Text>
+      <Text style={styles[theme]}>{text}</Text>
    
   )
 }
@@ -12,9 +25,35 @@ const Title = ({theme="default"}) => {
 export default Title
 
 export const styles = {
-    default:StyleSheet.create({
+    TEXT_12_400_18:StyleSheet.create({
         color:colors.WHITE,
         fontSize:12,
         fontWeight:"400",
         lineHeight:18
-    })}
+    }),
+    TEXT_16_700:StyleSheet.create({
+        color:colors.BLACK,
+        fontSize:16,
+        fontWeight:"700",
+        lineHeight:22
+    }),
+    TEXT_22_700_40:StyleSheet.create({
+        color:colors.BLACK,
+        fontSize:22,
+        fontWeight:"700",
+        lineHeight:40
+    }),
+    TEXT_14_700:StyleSheet.create({
+        color:colors.BLACK,
+        fontSize:14,
+        fontWeight:"700",
+     
+    }),
+    TEXT_14_400:StyleSheet.create({
+        color:colors.BLACK,
+        fontSize:14,
+        fontWeight:"400",
+        
+    })
+
+}

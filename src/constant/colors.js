@@ -1,8 +1,9 @@
 export const colors ={
     BLUE:"#3BA1FF",
+    DARKBLUE:"#004C8B",
     BLACK:"#000000",
     WHITE:"#FFFFFF",
-    GRAY:"#EFEFEF",
+    GRAY:"#6e6e6e",
     RED:"#FE0135",
     GREEN:"#2ECC71",
     YELLOW:"#F1C40F",

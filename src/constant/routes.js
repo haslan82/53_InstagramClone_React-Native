@@ -7,3 +7,6 @@ export const SIGNIN = 'SignIn';
 export const SIGNUP = 'SignUp';
 export const AUTHFLOW = 'AuthFlow';
 export const MAINFLOW = 'MainFlow';
+export const FEEDPOSTSCREEN = 'FeedPostScreen';
+export const PROFILESCREEN = 'ProfileScreen';
+
