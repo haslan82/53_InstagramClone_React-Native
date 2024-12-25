@@ -3,6 +3,7 @@ import {StyleSheet} from 'react-native';
 import FeedPostsScreen from '../screens/homeFlow/feedPostsScreen';
 import ProfileScreen from '../screens/profileFlow/profileScreen';
 import {FEEDPOSTSCREEN, PROFILESCREEN} from '../constant/routes';
+import { colors } from '../constant/colors';
 
 const HomeFlow = () => {
   const HomeFlowStack = createNativeStackNavigator();
@@ -24,6 +25,6 @@ export default HomeFlow;
 
 const styles = StyleSheet.create({
   content: {
-    //  backgroundColor: 'red', // Arka plan rengini burada belirtiyoruz
+      backgroundColor: colors.WHITE, // Arka plan rengini burada belirtiyoruz
   },
 });

@@ -10,4 +10,6 @@ export const colors ={
     ORANGE:"#F39C12",
     PURPLE:"#8E44AD",
     INDIGO:"#3498DB",
+    GRAY1:"#F2F2F2",
+    DARK_GRAY:"#c4c4c4"
 }
