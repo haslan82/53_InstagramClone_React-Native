@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {View, StyleSheet, Text, Image} from 'react-native';
 import Header from '../../components/commons/Header';
 import {PROFILESCREEN} from '../../constant/routes';
@@ -12,8 +12,18 @@ import {colors} from '../../constant/colors';
 import CustomButton from '../../components/customButtons/CustomButton';
 import PressableIcon from '../../components/ProfileFlow/PressableIcon';
 import SavedIgStories from "../../components/ProfileFlow/SavedIgStories";
+import TabNaviBar from '../../components/ProfileFlow/TabNaviBar';
+
+
+
+const tabList=[
+  "post",
+  "reels",
+  "user"
+]
 
 const ProfileScreen = () => {
+  const [activeTab, setActiveTab] = useState(0);
   return (
     <View style={styles.container}>
       <Header screenName={PROFILESCREEN} isMyProfile={true} />
@@ -91,6 +101,7 @@ const ProfileScreen = () => {
         
       </View>
     <SavedIgStories />
+    <TabNaviBar tabList={tabList} activeBar={activeTab} setActiveBar={setActiveTab} />
 
     </View>
   );
