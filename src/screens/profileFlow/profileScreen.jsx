@@ -13,6 +13,10 @@ import CustomButton from '../../components/customButtons/CustomButton';
 import PressableIcon from '../../components/ProfileFlow/PressableIcon';
 import SavedIgStories from "../../components/ProfileFlow/SavedIgStories";
 import TabNaviBar from '../../components/ProfileFlow/TabNaviBar';
+import GridPhotos from '../../components/ProfileFlow/GridPhotos';
+
+
+
 
 
 
@@ -102,6 +106,7 @@ const ProfileScreen = () => {
       </View>
     <SavedIgStories />
     <TabNaviBar tabList={tabList} activeBar={activeTab} setActiveBar={setActiveTab} />
+    <GridPhotos/>
 
     </View>
   );

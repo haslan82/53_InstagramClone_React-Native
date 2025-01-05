@@ -5,7 +5,7 @@ import { Grid, Play, User } from '../../assets/icons'
 const TabNaviBar = ({
     tabList, activeBar,setActiveBar
 }) => {
-    console.log( tabList, activeBar,setActiveBar)
+    //console.log( tabList, activeBar,setActiveBar)
   return (
     <View style={styles.TabNaviBar} >
 
